@@ -3,10 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC Studios</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>DEVSQUAD Studios</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div id="root"></div>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png.png" width="50" height="50" alt="DEVSQUAD Studios">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to DEVSQUAD Studios</h1>
+            <p>Your One-Stop Destination for Live Streaming, Media Production, Digital Marketing & More!</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+        <video autoplay loop muted class="background-video">
+            <source src="hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About DEVSQUAD Studios</h2>
+            <p>At DEVSQUAD Studios, we specialize in high-quality media production, innovative live streaming services, and event management solutions. With years of experience and a dedicated team, we help you bring your brand to life.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item" data-aos="fade-up">
+                <h3>Live Streaming</h3>
+                <p>We provide seamless live streaming for events, gaming, corporate webinars, and more.</p>
+            </div>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <h3>Media Production</h3>
+                <p>From video production to content creation, we bring your creative vision to life.</p>
+            </div>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                <h3>Digital Marketing</h3>
+                <p>Reach your target audience with tailored digital marketing strategies and campaigns.</p>
+            </div>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="600">
+                <h3>Event Management</h3>
+                <p>We manage every aspect of your event, ensuring seamless execution and maximum impact.</p>
+            </div>
+            <div class="service-item" data-aos="fade-up" data-aos-delay="800">
+                <h3>Esports Services</h3>
+                <p>From esports tournaments to broadcasting, we help organize and manage everything for your event.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-item" data-aos="fade-up">
+                <img src="portfolio1.jpg" alt="Project 1">
+                <p>Project 1 - Live Streaming Event</p>
+            </div>
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="portfolio2.jpg" alt="Project 2">
+                <p>Project 2 - Media Production</p>
+            </div>
+            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="portfolio3.jpg" alt="Project 3">
+                <p>Project 3 - Esports Tournament</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-post">
+                <h3>How to Organize a Successful Live Streaming Event</h3>
+                <p>Learn the essentials for creating a smooth and engaging live streaming experience.</p>
+            </div>
+            <div class="blog-post">
+                <h3>5 Tips for Effective Digital Marketing in 2025</h3>
+                <p>Discover the best strategies for reaching your audience online.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 DEVSQUAD Studios. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize animations
+    </script>
 </body>
 </html>
+<button id="scroll-to-top-btn" style="display:none;">Back to Top</button>
